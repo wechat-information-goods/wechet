@@ -1,0 +1,35 @@
+/* pages/list/list.wxss */
+@import "/common/common.wxss";
+
+
+.container1 view {
+  /* width: 100px; */
+  height: 200px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container1 view:nth-child(1){
+  background-color: aquamarine;
+}
+.container1 view:nth-child(2){
+  background-color: rgb(169, 56, 204);
+}
+.container1 view:nth-child(3){
+  background-color: rgb(23, 25, 151);
+}
+
+.container1 {
+  border: 1px solid red;
+  /* width: 100px; */
+  height: 500px;
+}
+
+
+image{
+  border:1px solid red;
+}
+
+input{
+  border: 1px solid rgb(40, 228, 87);
+}

@@ -1,0 +1,3 @@
+<!--pages/test/test.wxml-->
+<navigator wx:for="{{color}}" wx:key="index" class="num-item" style="background-color: rgba({{item}});" 
+url="/pages/message/message">{{item}}</navigator>

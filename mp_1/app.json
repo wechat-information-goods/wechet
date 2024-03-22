@@ -1,0 +1,54 @@
+{ 
+  "pages": [
+    "pages/index/index",
+    "pages/firstpage/firstpage",
+    "pages/list/list",
+    "pages/test/test",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#00B26A",
+    "navigationBarTitleText": "安心咨询",
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle":"dark",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/firstpage/firstpage",
+        "text": "首页",
+        "iconPath": "/image/心理咨询.png",
+        "selectedIconPath": "/image/心理健康.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "消息",
+        "iconPath": "/image/消息.png",
+        "selectedIconPath": "/image/论坛中心.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "我的",
+        "iconPath": "/image/好友.png",
+        "selectedIconPath": "/image/聊天.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

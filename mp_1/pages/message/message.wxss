@@ -1,0 +1,25 @@
+.lt-item{
+  display: flex;
+  padding: 15rpx;
+  border: 1rpx solid #eeffee;
+  margin: 15rpx;
+  border-radius: 8rpx;
+  box-shadow: 1rpx 1rpx 15rpx #eeffee;
+}
+.thumb image{
+  width: 250rpx;
+  height: 250rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 24rpx;
+}
+
+.lt-title{
+  font-weight: bold;
+}

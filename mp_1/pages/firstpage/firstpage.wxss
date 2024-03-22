@@ -1,0 +1,33 @@
+/* pages/firstpage/firstpage.wxss */
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 1rpx solid rgb(84, 207, 207);
+  border-top: 1rpx solid rgb(84, 207, 207);
+}
+
+.grid-item{
+  width: 33.33%;
+  height: 200rpx;
+  /* flex容器 */
+  display: flex;
+  /* 纵向布局 */
+  flex-direction: column;
+  /* 居中 */
+  align-items: center;
+  justify-content: center;
+  /* 边框 */
+  border-right: 1rpx solid rgb(84, 207, 207);
+  border-bottom: 1rpx solid rgb(84, 207, 207);
+  box-sizing: border-box;
+}
+
+.grid-item image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.grid-item text{
+  font-size: 24rpx;
+  margin: 10rpx;
+}

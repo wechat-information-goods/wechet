@@ -1,0 +1,27 @@
+<!--pages/firstpage/firstpage.wxml-->
+
+<button bind:tap="getinfo">发起GRT请求</button>
+
+<button bind:tap="postinfo">发起POST请求</button>
+
+<!-- 九宫格区域 -->
+<view class="grid-list">
+  <navigator class="grid-item" wx:for="{{gridlist}}" wx:key="id" url="/pages/message/message?id={{item.id}}&name={{item.name}}"> 
+    <image src="{{item.icon}}"></image>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
+
+<!-- 跳转导航，注意url要以/开头，跳转tabBar的时候要加open-type=。。。,不是的话可以不写 -->
+<navigator url="/pages/test/test" open-type="switchTab">导航到消息页面</navigator>
+<navigator url="/pages/message/message" open-type="navigate">导航到message的页面</navigator>
+<!-- 后退一个页面，写在message了，后退一个页面 -->
+<navigator open-type="navigateBack" delta="1">后退</navigator>
+<!-- 编程式导航到tabBar，就是用事件完成导航-->
+<button bind:tap="gototest">去test</button>
+<!-- 编程式导航到非tabBar，就是用事件完成导航 -->
+<button bind:tap="gotomessage">去message</button>
+<!-- 声明式导航传参 -->
+<navigator url="/pages/message/message?name=zs&age=21">去message并传参数</navigator>
+<!-- 编程式导航传参 -->
+<button bind:tap="bcdhcc">去message并传参数</button>

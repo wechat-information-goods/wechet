@@ -1,0 +1,49 @@
+<!--pages/list/list.wxml-->
+<!-- <scroll-view class="container1" scroll-y>
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</scroll-view> -->
+
+<view>
+  手机号：
+  <text user-select>13856957688</text>
+</view>
+
+<!-- <button size="mini">按钮</button>
+<button type="primary" size="mini">主色调按钮</button>
+<button type="warn" size="mini">警告按钮</button> -->
+
+<image src="/image/IMG_5045.png" mode="aspectFit"/>
+<!-- 
+<view>{{info}}</view>
+<image src="{{imgsrc}}" mode="aspectFill"/> -->
+
+<!-- <view>{{random1 >=5 ? '数字大于五' : '数字小于五' }}</view>
+
+<button type="primary" bind:tap="btn">按钮</button>
+<button type="primary" bind:tap="countchange">+1</button>
+<view>{{count}}</view>
+<button type="primary" bind:tap="delivernumber" data-info="{{2}}">传参</button> -->
+<input value="{{msg}}" bindinput="bipt"></input>
+
+<!-- 条件渲染,选择语句,可以用block也可以直接外面包view，区别是会不会再appdata中显示，想隐藏也可以直接用hidden,频繁切换用hidden，复杂用wx：if -->
+ <!-- <view wx:if="{{type === 1}}">男</view>
+ <view wx:elif="{{type === 2}}">女</view>
+ <view wx:else>保密</view>
+
+ <block wx:if="{{false}}"> 
+  <view>view1</view>
+  <view>view2</view>
+ </block> -->
+
+ <view hidden="{{flag}}">view1</view>
+
+ <!-- 列表渲染 wx：for-->
+ <!-- <view wx:for="{{arr1}}" wx:key="index">
+    索引是：{{index}},item是{{item}}
+ </view>
+
+ <view wx:for="{{userlist}}" wx:key="id" class="username">
+  {{item.name}}
+ </view> -->

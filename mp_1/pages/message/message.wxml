@@ -1,0 +1,13 @@
+<!--pages/message/message.wxml-->
+<navigator open-type="navigateBack" delta="1">后退</navigator>
+<view class= "lt-item" wx:for="{{ltlist}}" wx:key="id">
+  <view class="thumb">
+      <image src="{{item.images[0]}}"></image>
+  </view>
+  <view class="info">
+    <text class="lt-title">{{item.name}}</text>
+    <text>电话 ：{{item.phone}}</text>
+    <text>地址 ：{{item.address}}</text>
+    <text>营业时间 ：{{item.businessHours}}</text>
+  </view>
+</view>
